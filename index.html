@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <style>
+      table,
+      thead,
+      tbody,
+      th,
+      tr,
+      td {
+        border: 2px solid gray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section
+      class="w-full bg-[#caf0f8] min-h-screen flex flex-col sm:items-center gap-5 text-[#403d39]"
+    >
+    <h1 class="text-center text-3xl font-semibold">User Data Saver</h1>
+      <div
+        class="bg-[#edede9] w-full sm:w-3/4 md:w-3/5 h-72 lg:w-2/5 flex flex-col gap-4 justify-center items-center "
+      >
+        <label for="">
+          <p class="text-xl">Email</p>
+          <input
+            id="email"
+            type="email"
+            size="30px"
+            placeholder="Email here..."
+            class="px-2 py-1 outline-none focus:outline-2 focus:outline-red-500 focus:outline-offset-0"
+          />
+        </label>
+        <label for="">
+          <p class="text-xl">Password</p>
+          <input
+            id="password"
+            type="password"
+            size="30px"
+            placeholder="Minimum 6 caractar..."
+            class="px-2 py-1 outline-none focus:outline-2 focus:outline-red-500 focus:outline-offset-0"
+          />
+        </label>
+        <div>
+        <button
+          id="datasave"
+          class="bg-transparent border-4 px-10 py-1 text-xl font-semibold border-red-500 hover:scale-105 active:scale-100 active:translate-y-1"
+        >
+          Save
+        </button>
+        <button
+        id="cleardata"
+        class="bg-transparent border-4 px-10 py-1 text-xl font-semibold border-red-500 hover:scale-105 active:scale-100 active:translate-y-1"
+      >
+        Clear
+      </button>
+    </div>
+        <p id="warning"></p>
+      </div>
+      <table>
+        <thead>
+          <th>S.no</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </thead>
+        <tbody class="capitalize">
+          
+        </tbody>
+      </table>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
